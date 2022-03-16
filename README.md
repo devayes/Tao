@@ -9,6 +9,7 @@ Laravel artisan command to display selected or random chapters from the Tao Te C
 
 ## Usage
 `php artisan tao:chapter`
+
 `php artisan tao:chapter --chapter=14`
 
 ### About
