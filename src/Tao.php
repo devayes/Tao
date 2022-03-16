@@ -87,7 +87,7 @@ class Tao
      * MacOS voices
      * Should be available by language, etc. Skip for now.
      */
-    public getVoices(): array
+    public function getVoices(): array
     {
         return [
             'Albert',
