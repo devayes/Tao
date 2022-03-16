@@ -24,8 +24,17 @@ class TaoCommand extends Command
     {
         $chapter = $this->option('chapter');
 
+        if ($chapter) {
+            if ($chapter < 1) {
+                $chapter = 1;
+            } elseif ($chapter > 81) {
+                $chapter = 81;
+            }
+        }
+
+        $this->newLine();
         foreach (app('tao')->getChapter($chapter, 'array') as $line) {
-            $this->line($line);
+            $this->line("\t" . $line);
         }
         $this->newLine();
 

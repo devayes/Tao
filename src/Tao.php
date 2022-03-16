@@ -40,7 +40,7 @@ class Tao
         $index = $chapter ?? mt_rand(1, count($data));
         $chapter = \Arr::get($data, 'ch' . $index);
 
-        if ($format = 'string') {
+        if ($format == 'string') {
             return $this->getChapterAsString($chapter);
         }
 
