@@ -33,11 +33,20 @@ class Tao
      * @param string|null $format
      * @return string|array
      */
-    public function getChapter(?int $chapter = null, ?string $format = 'array')
+    public function getChapter(?int $index = null, ?string $format = 'array')
     {
         $data = $this->getTaoData();
 
-        $index = $chapter ?? mt_rand(1, count($data));
+        $index = $index ?? mt_rand(1, count($data));
+
+        if ($index) {
+            if ($index < 1) {
+                $index = 1;
+            } elseif ($index > 81) {
+                $index = 81;
+            }
+        }
+
         $chapter = \Arr::get($data, 'ch' . $index);
 
         if ($format == 'string') {
