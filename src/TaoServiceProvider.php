@@ -6,7 +6,6 @@ namespace Devayes\Tao;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
-use Devayes\Tao\Console\TaoCommand;
 
 class TaoServiceProvider extends ServiceProvider
 {
