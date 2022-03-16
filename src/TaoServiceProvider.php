@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Devayes\Tao;
 
+use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 use Devayes\Tao\Console\TaoCommand;
 
