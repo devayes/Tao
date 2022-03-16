@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Devayes\Tao;
 
 use Illuminate\Support\ServiceProvider;
-use Devayes\Tao\Console\TaoCommand;
 
 class TaoServiceProvider extends ServiceProvider
 {
