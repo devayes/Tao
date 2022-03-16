@@ -1,0 +1,50 @@
+{
+    "name": "devayes/Tao",
+    "description": "Tao te Ching.",
+    "keywords": [
+        "tao",
+        "philosophy"
+    ],
+    "homepage": "https://github.com/devayes/Tao",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Devin Hayes",
+            "email": "devayes@protonmail.com",
+            "role": "Primate"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "~7|~8|~9|~10|~11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devayes\\Tao\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Devayes\\Tao\\TaoServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devayes/Tao"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
