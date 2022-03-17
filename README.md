@@ -12,5 +12,10 @@ Laravel artisan command to display selected or random chapters from the Tao Te C
 
 `php artisan tao:chapter --chapter=14`
 
+`echo tao($chapter, $format = 'text');`
+
+## Example
+[Chapter 14](https://github.com/devayes/Tao/blob/main/src/example/chapter_14.png)
+
 ### About
 The Tao Te Ching is a Chinese classic text written around 400 BC and traditionally credited to the sage Laozi. The text's authorship, date of composition and date of compilation are debated.
