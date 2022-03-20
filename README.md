@@ -5,7 +5,16 @@
 Laravel artisan command to display selected or random chapters from the Tao Te Ching.
 
 ## Install
-`composer require devayes/tao:dev-main`
+Add to your `composer.json` file:
+```json
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/devayes/Tao"
+    }
+ ],
+```
+`composer require devayes/tao:1.0`
 
 ## Usage
 `php artisan tao:chapter`
